@@ -16,18 +16,15 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID, PM_AUTO_BAN,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = (
-    "`Hello! This is an automated message.\n\n`"
-    "`I haven't approved you to PM yet.`"
-    "`Please wait for me to look in, I mostly approve PMs.\n\n`"
-    "`Until then, please don't spam my PM, you'll get blocked and reported!`")
+UNAPPROVED_MSG = Hey!
+My Master Is Offline Just Leave Your Message He Is Quite Busy In Some Work, Thankyou!
 # =================================================================
 
 
 @register(incoming=True, disable_edited=True, disable_errors=True)
-async def permitpm(event):
-    """ Prohibits people from PMing you without approval. \
-        Will block retarded nibbas automatically. """
+async def permitpm(event):Nai Mana Tu Bc
+Le Ab Ban kha.
+    
     if PM_AUTO_BAN:
         self_user = await event.client.get_me()
         if event.is_private and event.chat_id != 777000 and event.chat_id != self_user.id and not (
